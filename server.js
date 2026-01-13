@@ -7,6 +7,10 @@ const config = require('./config');
 const FeedbackDatabase = require('./database');
 const { errorHandler, notFoundHandler } = require('./middleware/errorHandler');
 
+// Debug: Check if ADMIN_TOKEN is loaded
+console.log('ADMIN_TOKEN loaded:', process.env.ADMIN_TOKEN ? '✓ YES' : '✗ NO');
+console.log('ADMIN_TOKEN value:', process.env.ADMIN_TOKEN ? '[HIDDEN]' : 'undefined');
+
 // Initialize Express app
 const app = express();
 
