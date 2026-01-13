@@ -13,12 +13,12 @@
   --color-warning: #f59e0b;
   --color-info: #3b82f6;
   
-  --color-bg: #f8fafc;
-  --color-surface: #ffffff;
-  --color-border: #e2e8f0;
-  --color-text: #1e293b;
-  --color-text-light: #64748b;
-  --color-text-lighter: #94a3b8;
+  --color-bg: #0f0c29;
+  --color-surface: #1a1638;
+  --color-border: #2d2557;
+  --color-text: #e2e8f0;
+  --color-text-light: #94a3b8;
+  --color-text-lighter: #64748b;
   
   --spacing-xs: 0.5rem;
   --spacing-sm: 0.75rem;
@@ -42,7 +42,8 @@
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  background: var(--color-bg);
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  min-height: 100vh;
   color: var(--color-text);
   line-height: 1.6;
 }
@@ -51,7 +52,7 @@ body {
 .auth-modal {
   position: fixed;
   inset: 0;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
   display: flex;
   align-items: center;
   justify-content: center;
